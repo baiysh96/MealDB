@@ -8,11 +8,11 @@ const HomePage = () => {
     return (
         <div>
         <div className="container">
-           <div className="hero">
+           <div className="row">
                <div className="item-col">
                    <img src={img} alt=""/>
                </div>
-               <div className="col-8 ">
+               <div className="col-8">
                   <h1 className="hero-title">Welcome to TheMealDB</h1>
                    <p>Welcome to TheMealDB: An open, crowd-sourced database of Recipes from around the world.
                        We also offer a free JSON API for anyone wanting to use it, with additional features for
@@ -20,12 +20,13 @@ const HomePage = () => {
                    </p>
                </div>
                <div className="item-col">
-                   <img src={img} alt=""/>
+                   <img src={img} alt="" height="100%"/>
                </div>
            </div>
-            <img className="line-img" src={line} alt="" width="100%"/>
+            <img className="line-img" src={line} alt="" />
         </div>
             <LatestMeals />
+            <img className="line-img" src={line} alt="" />
             <RandomMeals />
         </div>
     );

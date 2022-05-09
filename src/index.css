@@ -43,11 +43,10 @@ input.search-form {
 }
 .hero {
     padding: 30px 0;
-    display: flex;
-    justify-content: space-between;
 
 }
 .col-8{
+    width: 60%;
     color: white;
     padding: 15px 30px;
     text-align: center;
@@ -96,7 +95,7 @@ input.search-form {
     width: 100%;
 }
 .line-img {
-    margin-bottom: 30px;
+    margin: 30px 0;
 }
 .spinner-container {
     margin-top: 30px;

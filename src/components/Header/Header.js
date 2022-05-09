@@ -7,7 +7,9 @@ return(
     <header className="header">
         <div className="container">
             <div className="side-bar">
-                <img src={logo} alt=""/>
+                <div>
+                    <img src={logo} alt="" width="300"/>
+                </div>
             <nav className="menu">
                 <Link style={{paddingLeft: 13, textDecoration: 'none',color:'white'}} to="/">Home</Link>
                 <Link style={{paddingLeft: 13, textDecoration: 'none',color:'white',margin:"20px"}} to="/meals" >Meals</Link>
