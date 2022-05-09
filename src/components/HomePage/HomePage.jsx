@@ -4,7 +4,7 @@ import line from "../../assets/separator.jpeg"
 import RandomMeals from "../RandomMeals";
 import LatestMeals from "../LatestMeals";
 
-const Home = () => {
+const HomePage = () => {
     return (
         <div>
         <div className="container">
@@ -31,4 +31,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default HomePage;

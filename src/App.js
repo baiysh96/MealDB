@@ -3,7 +3,7 @@ import './App.css';
 import {BrowserRouter, Route,Routes} from "react-router-dom"
 
 import Header from "./components/Header";
-import Home from "./components/Home";
+import HomePage from "./components/HomePage";
 import RandomMeals from "./components/RandomMeals";
 import MealsInfo from "./components/MealsInfo";
 
@@ -15,7 +15,7 @@ function App() {
            <Header />
         <Routes>
            <Route path="/meals"  element={<RandomMeals />}/>
-          <Route path="/"  element={<Home />}/>
+          <Route path="/"  element={<HomePage />}/>
           <Route path="/meals/:slug"  element={<MealsInfo />}/>
 
         </Routes>
