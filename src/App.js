@@ -7,6 +7,7 @@ import HomePage from "./components/HomePage";
 import RandomMeals from "./components/RandomMeals";
 import MealsInfo from "./components/MealsInfo";
 import LatestMeals from "./components/LatestMeals";
+import LatestMealsInfo from "./components/LatestMealsInfo";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Routes>
            <Route path="/meals"  element={<RandomMeals />}/>
            <Route path="/latestMeals"  element={<LatestMeals />}/>
+           <Route path="/latestMeals/:id"  element={<LatestMealsInfo />}/>
           <Route path="/"  element={<HomePage />}/>
           <Route path="/meals/:slug"  element={<MealsInfo />}/>
 

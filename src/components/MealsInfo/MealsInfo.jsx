@@ -35,7 +35,6 @@ const MealsInfo = () => {
                       <ul className="list-group">
                           <li className="list-group-item">{meals.meals[slug].strInstructions}</li>
                       </ul>
-                      <img src={`/images/media/meals/${slug  + 1}.jpg`} alt=""/>
 
                   </div>
 

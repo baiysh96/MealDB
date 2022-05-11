@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios"
 import Spinner from "../Spinner";
+import {Link} from "react-router-dom";
 
 const LatestMeals = () => {
     const [latestMeals,setLatestMeals] = useState()
@@ -23,8 +24,10 @@ const LatestMeals = () => {
                {
                    latestMeals.meals.map((oneMeal,index) => (
                        <div key={index} className="item-col">
-                           <img className="item-img" src={oneMeal.strMealThumb} alt=""/>
-                           {oneMeal.strMeal}
+                          <Link style={{paddingLeft: 13, textDecoration: 'none',color:'white'}} to={`/latestMeals/${index}`} className="item-meal">
+                              <img className="item-img" src={oneMeal.strMealThumb} alt=""/>
+                              {oneMeal.strMeal}
+                          </Link>
                        </div>
                    ))
                }
