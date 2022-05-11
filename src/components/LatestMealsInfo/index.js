@@ -1,2 +1,2 @@
-import LatestMelsInfo from "./LatestMelsInfo";
-export default LatestMelsInfo;
+import LatestMealsInfo from "./LatestMealsInfo";
+export default LatestMealsInfo;

@@ -23,10 +23,10 @@ const RandomMeals = () => {
         <h2 className="title">Random Meals</h2>
         <div className="row">
             {
-                meals.meals.map((oneMeal,idx) =>(
+                meals.meals.map((oneMeal) =>(
 
-                    <div key={idx} className="item-col">
-                        <Link style={{paddingLeft: 13, textDecoration: 'none',color:'white'}} to={`/meals/${idx + 1}`} className="item-meal">
+                    <div key={oneMeal.idMeal} className="item-col">
+                        <Link style={{paddingLeft: 13, textDecoration: 'none',color:'white'}} to={`/meals/${oneMeal.idMeal}`} className="item-meal">
                             <img className="item-img" src={oneMeal.strMealThumb} alt=""/>
                             <h4>{oneMeal.strMeal}</h4>
                         </Link>

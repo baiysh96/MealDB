@@ -1,8 +1,9 @@
 import React from 'react';
-import img from "../../assets/meal-icon.png"
-import line from "../../assets/separator.jpeg"
-import RandomMeals from "../RandomMeals";
-import LatestMeals from "../LatestMeals";
+import img from "../../../assets/meal-icon.png"
+import line from "../../../assets/separator.jpeg"
+import LatestMeals from "../../LatestMeals";
+import RandomMeals from "../../RandomMeals";
+
 
 const HomePage = () => {
     return (
@@ -12,7 +13,7 @@ const HomePage = () => {
                <div className="item-col">
                    <img src={img} alt=""/>
                </div>
-               <div className="col-8">
+               <div className="col-7">
                   <h1 className="hero-title">Welcome to TheMealDB</h1>
                    <p>Welcome to TheMealDB: An open, crowd-sourced database of Recipes from around the world.
                        We also offer a free JSON API for anyone wanting to use it, with additional features for

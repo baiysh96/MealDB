@@ -1,18 +1,18 @@
 import React from 'react';
 import {useEffect, useState} from "react";
-import axios from "axios";
 import {Link, useParams} from "react-router-dom";
+import axios from "axios";
 import Spinner from "../Spinner";
 
-const MealsInfo = () => {
-    const [meal,setMeal] = useState({})
+const LatestMealsInfo = () => {
+    const [latestMeals,setLatestMeals] = useState({})
     const [isLoading,setIsLoading] = useState(true)
     const [ingredients,setIngredients] = useState([])
     const getIngredients = () => {
         let result = []
         for(let i = 0; i< 20; i++) {
-            if(meal[`strIngredient${i + 1}`])
-                result = [...result,meal[`strIngredient${i + 1}`]]
+            if(latestMeals[`strIngredient${i + 1}`])
+            result = [...result,latestMeals[`strIngredient${i + 1}`]]
         }
         setIngredients(result)
     }
@@ -21,7 +21,7 @@ const MealsInfo = () => {
     useEffect(()  => {
         axios(`https://www.themealdb.com/api/json/v2/1/lookup.php?i=${id}`)
             .then((res) => {
-                setMeal(res.data.meals[0])
+                setLatestMeals(res.data.meals[0])
                 getIngredients(res.data.meals[0])
                 setIsLoading(false)
             })
@@ -33,11 +33,11 @@ const MealsInfo = () => {
         <div className="container">
             <Link
                 to="/" ><button
-                className="btn element-btn">Back</button> </Link>
+                className="btn element-btn" >Back</button> </Link>
             <div className="row">
                 <div  className="col-3">
-                    <h2 className="meal-title">{meal.strMeal}</h2>
-                    <img className="item-img" src={meal.strMealThumb} alt="" width="100%"/>
+                    <h2 className="meal-title">{latestMeals.strMeal}</h2>
+                    <img className="item-img" src={latestMeals.strMealThumb} alt="" width="100%"/>
                 </div>
                 <div className="col-8">
                     <h2 className="meal-title">Ingredients</h2>
@@ -58,4 +58,4 @@ const MealsInfo = () => {
     );
 };
 
-export default MealsInfo;
+export default LatestMealsInfo;

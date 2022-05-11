@@ -9,12 +9,12 @@ return(
         <div className="container">
             <div className="side-bar" >
                 <div>
-                    <img className="logo" src={logo} alt="" />
+                    <Link to="/"><img className="logo" src={logo} alt="" /></Link>
                 </div>
               <nav className={active? 'menu show' : 'menu' } onClick={() => setActive(false)}>
-                  <Link style={{paddingLeft: 13, textDecoration: 'none',color:'white'}} to="/"  >Home</Link>
-                  <Link style={{paddingLeft: 13, textDecoration: 'none',color:'white'}} to="/latestMeals">Latest Meals</Link>
-                  <Link style={{paddingLeft: 13, textDecoration: 'none',color:'white',margin:"20px"}} to="/meals" >Random Meals</Link>
+                  <Link style={{marginLeft: 20,marginRight: 20, textDecoration: 'none',color:'white'}} to="/"  ><button className="btn btn-danger">Home</button></Link>
+                  {/*<Link style={{marginLeft: 20, textDecoration: 'none',color:'white'}} to="/latestMeals">Latest Meals</Link>*/}
+                  {/*<Link style={{marginLeft: 20, textDecoration: 'none',color:'white',margin:"20px"}} to="/meals" >Random Meals</Link>*/}
                   <input type="text" name="s" className="search-form" autoComplete="off" placeholder=" Search"/>
               </nav>
                 <div className={active? 'burger show-menu':'burger' } onClick={() => setActive(!active)}>
