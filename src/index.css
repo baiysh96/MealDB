@@ -27,6 +27,9 @@ code {
     width: 100%;
     background: #23180d;
 }
+.logo {
+    width:300px;
+}
 .menu {
    display: flex;
     justify-content: space-between;
@@ -147,6 +150,9 @@ input.search-form {
         width: 100%;
         padding: 0 5px;
         text-align:center;
+    }
+    .logo {
+        width: 100px;
     }
     img{
         width: 100%;

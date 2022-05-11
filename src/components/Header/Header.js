@@ -8,7 +8,7 @@ return(
         <div className="container">
             <div className="side-bar">
                 <div>
-                    <img src={logo} alt="" width="300"/>
+                    <img className="logo" src={logo} alt="" />
                 </div>
             <nav className="menu">
                 <Link style={{paddingLeft: 13, textDecoration: 'none',color:'white'}} to="/">Home</Link>
