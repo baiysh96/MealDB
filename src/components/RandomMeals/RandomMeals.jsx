@@ -28,7 +28,7 @@ const RandomMeals = () => {
                     <div key={idx} className="item-col">
                         <Link style={{paddingLeft: 13, textDecoration: 'none',color:'white'}} to={`/meals/${idx + 1}`} className="item-meal">
                             <img className="item-img" src={oneMeal.strMealThumb} alt=""/>
-                            {oneMeal.strMeal}
+                            <h4>{oneMeal.strMeal}</h4>
                         </Link>
                     </div>
                 ) )

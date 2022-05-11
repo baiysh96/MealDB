@@ -6,15 +6,17 @@ import Header from "./components/Header";
 import HomePage from "./components/HomePage";
 import RandomMeals from "./components/RandomMeals";
 import MealsInfo from "./components/MealsInfo";
+import LatestMeals from "./components/LatestMeals";
 
 
 function App() {
   return (
       <BrowserRouter >
-        <div >
+        <div>
            <Header />
         <Routes>
            <Route path="/meals"  element={<RandomMeals />}/>
+           <Route path="/latestMeals"  element={<LatestMeals />}/>
           <Route path="/"  element={<HomePage />}/>
           <Route path="/meals/:slug"  element={<MealsInfo />}/>
 
