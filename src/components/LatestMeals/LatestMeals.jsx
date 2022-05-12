@@ -23,9 +23,9 @@ const LatestMeals = () => {
            <div className="row">
                {
                    latestMeals.meals.map((oneMeal) => (
-                       <div key={oneMeal.idMeal} className="item-col">
+                       <div key={oneMeal.idMeal} className="element-col">
                           <Link style={{paddingLeft: 13, textDecoration: 'none',color:'white'}} to={`/latestMeals/${oneMeal.idMeal}`} className="item-meal">
-                              <img className="item-img" src={oneMeal.strMealThumb} alt=""/>
+                              <img className="item-img" src={oneMeal.strMealThumb} alt="" width="100%"/>
                               {oneMeal.strMeal}
                           </Link>
                        </div>

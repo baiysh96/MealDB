@@ -25,7 +25,7 @@ const RandomMeals = () => {
             {
                 meals.meals.map((oneMeal) =>(
 
-                    <div key={oneMeal.idMeal} className="item-col">
+                    <div key={oneMeal.idMeal} className="element-col">
                         <Link style={{paddingLeft: 13, textDecoration: 'none',color:'white'}} to={`/meals/${oneMeal.idMeal}`} className="item-meal">
                             <img className="item-img" src={oneMeal.strMealThumb} alt=""/>
                             <h4>{oneMeal.strMeal}</h4>

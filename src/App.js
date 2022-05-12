@@ -7,6 +7,7 @@ import HomePage from "./components/screen/Homescreen";
 import MealsInfo from "./components/MealsInfo";
 import LatestMealsInfo from "./components/LatestMealsInfo";
 import NotFound from "./components/NotFound";
+import Ingredients from "./components/Ingredients";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
            <Header />
         <Routes>
            <Route path="/latestMeals/:id"  element={<LatestMealsInfo />}/>
+           <Route path="/ingredients/:slug"  element={<Ingredients />}/>
           <Route path="/"  element={<HomePage />}/>
           <Route path="/meals/:id"  element={<MealsInfo />}/>
           <Route path="*"  element={<NotFound />}/>
