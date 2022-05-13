@@ -17,7 +17,11 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background: #2d2013;
 }
-
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace,Open-Sans;
@@ -41,20 +45,23 @@ code {
     align-items: center;
 }
 .btn {
-    margin-right: 20px;
-    padding: 5px 8px;
+    background-color: #2d2013;
+    padding: 8px 10px;
     border: none;
+    font-size: 17px;
     border-radius: 6px;
     cursor: pointer;
     transition: 0.5s;
+    color: white;
 
 }
 .btn:hover {
-    color: #2d2013;
-    background-color: indianred;
+    color: white;
+    background-color: #c52d2f;
 }
 input.search-form {
     margin-right: 20px;
+    margin-left: 30px;
     background: white;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -84,11 +91,6 @@ input.search-form {
     margin-bottom: 20px ;
     font-family: 'Open Sans', sans-serif;
 
-}
-.container {
-    width: 1170px;
-    margin: 0 auto;
-    padding: 0 15px;
 }
 .side-bar {
     display: flex;
@@ -129,13 +131,15 @@ input.search-form {
 }
 .element-col {
     width: 25%;
-    padding: 0 15px;
+    padding: 0 15px 0 0;
     overflow: hidden;
+    text-align: center;
 
 
 }
 .element-btn {
     margin-top: 20px;
+
 }
 .title {
     color: white;

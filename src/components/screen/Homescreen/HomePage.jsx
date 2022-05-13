@@ -25,11 +25,12 @@ const HomePage = () => {
                </div>
            </div>
             <img className="line-img" src={line} alt="" />
-
-            <LatestMeals />
-            <img className="line-img" src={line} alt="" />
-            <RandomMeals />
         </div>
+            <LatestMeals />
+            <div className="container">
+                <img className="line-img" src={line} alt="" />
+            </div>
+            <RandomMeals />
      </div>
     );
 };
