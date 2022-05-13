@@ -3,6 +3,8 @@ import {useEffect, useState} from "react";
 import {Link, useParams} from "react-router-dom";
 import axios from "axios";
 import Spinner from "../Spinner";
+import arrowRight from "../../assets/images/Arrow-Right.png"
+import arrowLeft from "../../assets/images/Arrow-Left.png"
 
 const LatestMealsInfo = () => {
     const [latestMeals,setLatestMeals] = useState({})
@@ -38,8 +40,13 @@ const LatestMealsInfo = () => {
                     <h2 className="meal-title">{latestMeals.strMeal}</h2>
                     <img className="item-img" src={latestMeals.strMealThumb} alt="" width="100%"/>
                     <Link
+                        to={`/latestMeals/${+id-1}`}><button
+                        className="btn element-btn" ><img src={arrowLeft} width="60px" height="40px" alt=""/></button>
+                    </Link>
+                    <Link
                         to={`/latestMeals/${+id+ 1}`}><button
-                        className="btn element-btn" >Go Next</button> </Link>
+                        className="btn element-btn" ><img src={arrowRight} width="60px" height="40px" alt=""/></button>
+                    </Link>
                 </div>
                 <div className="col-8">
                     <h2 className="meal-title">Ingredients</h2>
