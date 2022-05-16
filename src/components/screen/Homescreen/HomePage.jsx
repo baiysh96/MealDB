@@ -3,6 +3,7 @@ import img from "../../../assets/meal-icon.png"
 import line from "../../../assets/separator.jpeg"
 import LatestMeals from "../../LatestMeals";
 import RandomMeals from "../../RandomMeals";
+import Footer from "../../Footer";
 
 
 const HomePage = () => {
@@ -31,6 +32,7 @@ const HomePage = () => {
                 <img className="line-img" src={line} alt="" />
             </div>
             <RandomMeals />
+            <Footer />
      </div>
     );
 };
